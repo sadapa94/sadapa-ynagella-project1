@@ -1,0 +1,54 @@
+<h1>Where is the Firebase?</h1>
+<h3 class="bg-success text-white">Press the [New Game] button to start!</h3>
+
+<!-- User's balance and current bets -->
+<div class="d-flex">
+    <p id="balance" class="bg-primary text-black" style="background-color: lightblue; width: 50%;">Balance:<span id="balance-value"> 15</span></p>
+    <p id="current-bets" class="bg-success text-black" style="background-color: lightblue; width: 50vw;">Current Bets:<span id="current-bets-value"></span></p>
+</div>
+
+<!-- Game key -->
+<p id="game-key">SECRET: Firebase card location:<span id="game-key-value"></span></p>
+
+<!-- Joker images -->
+<div class="row">
+    <div class="col">
+        <img src="/images/joker.png"  style="width: 100px; height: 150px;" >
+        
+        <div class="d-flex justify-content-left">
+            <button class="btn btn-outline-primary decrease-btn" style="margin-right: 5px;">-</button>
+            <p class="text-center">0</p>
+            <button class="btn btn-outline-danger increase-btn" style="margin-left: 5px;">+</button>
+        </div>
+        <div class="d-flex justify-content-left" style="margin-top: 10px;">
+            <button id="play" class="btn btn-outline-primary">Play</button>
+        </div>
+    </div>
+    <div class="col">
+        <img src="/images/joker.png" alt="JokerImage2" style="width: 100px; height: 150px;" >
+        
+        <div class="d-flex justify-content-left">
+            <button class="btn btn-outline-primary decrease-btn" style="margin-right: 5px;">-</button>
+            <p class="text-center">0</p>
+            <button class="btn btn-outline-danger increase-btn" style="margin-left: 5px;">+</button>
+        </div>
+        <div class="d-flex justify-content-left" style="margin-top: 10px;">
+            <button id="new-game" class="btn btn-outline-danger">New Game</button>
+        </div>
+    </div>
+    <div class="col">
+        <img src="/images/joker.png" alt="JokerImage3" style="width: 100px; height: 150px;" >
+        
+        <div class="d-flex justify-content-left">
+            <button class="btn btn-outline-primary decrease-btn" style="margin-right: 5px;">-</button>
+            <p class="text-center">0</p>
+            <button class="btn btn-outline-danger increase-btn" style="margin-left: 5px;">+</button>
+        </div>
+        
+        <div class="d-flex justify-content-left" style="margin-top: 10px;">
+            <button id="restart-app" class="btn btn-outline-success">Restart App</button>
+        </div>
+    </div>
+</div>
+
+<ul id="display" class="bg-success bg-opacity-25"></ul>
